@@ -1,0 +1,137 @@
+
+/**
+ * @file
+ * Drupal-specific CSS
+ */
+
+
+/*      CSS tricks' clearfix (IE8+)
+        @see http://css-tricks.com/snippets/css/clear-fix/
+*/
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*      Navigation : tabs (primary / secondary tasks)
+*/
+
+.tabs-wrap {
+    margin: 10px 0;
+    margin: 0.625rem 0;
+}
+
+.tabs.primary {
+    border-bottom: 1px solid #dedede;
+    border-bottom: 0.0625rem solid #dedede;
+    margin: 0;
+    padding-left: 10px;
+    padding-left: 0.625rem;
+    list-style: none;
+    }
+    .tabs.primary > li {
+        float: left;
+        display: block;
+        margin-bottom: -1px;
+        margin-bottom: -0.0625rem;
+        }
+        .tabs.primary > li > a {
+            display: block;
+            border: 1px solid #dedede;
+            border: 0.0625rem solid #dedede;
+            padding: 5px 10px;
+            padding: 0.3125rem 0.625rem;
+            background: #dedede;
+            color: #444;
+            text-decoration: none;
+        }
+    .tabs.primary > li + li {
+        margin-left: 10px;
+        margin-left: 0.625rem;
+    }
+    .tabs.primary > .active a {
+        background: white;
+        border-bottom-color: white;
+    }
+.tabs.primary:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/*      Navigation : menu trees
+*/
+
+.leaf {
+    padding: 5px 10px;
+    padding: 0.3125rem 0.625rem;
+}
+a.leaf {
+    display: inline-block;
+}
+
+
+
+/*      Admin menu
+*/
+
+#admin-menu-wrapper * {
+    font-size: 11px;
+    line-height: 14px;
+}
+#admin-menu-wrapper .dropdown .dropdown .expandable {
+    position: relative;
+}
+#admin-menu-wrapper .dropdown .dropdown .expandable .dropdown {
+    top: 22px;
+}
+
+
+
+/*      Messages
+*/
+
+.drupal-messages {
+    margin: 20px;
+    margin: 1.25rem;
+    }
+    .messages + .messages {
+        margin-top: 10px;
+        margin-top: .625rem;
+    }
+    .messages {
+        padding: 10px;
+        padding: .625rem;
+        }
+        .messages > ul,
+        .messages > ul > li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            }
+            .messages > [class^="icon-"],
+            .messages > [class*=" icon-"],
+            .messages > ul > li > [class^="icon-"],
+            .messages > ul > li > [class*=" icon-"] {
+                margin-right: 10px;
+                margin-right: .625rem;
+            }
+    .status,
+    .success {
+        background: #dff0d8;
+        color: #468847;
+    }
+    .warning {
+        background: #fcf8e3;
+        color: #c09853;
+    }
+    .error {
+        background: #f2dede;
+        color: #b94a48;
+    }
+
+

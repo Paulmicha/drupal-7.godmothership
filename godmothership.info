@@ -1,0 +1,49 @@
+name = GodmotherShip
+description = Custom base theme, inspired by @mortendk's Mothership
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+php = 5.3
+
+;-- Site Features
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+;features[] = main_menu
+;features[] = secondary_menu
+
+;-- Settings for Site Features
+settings[toggle_logo]                      = 1
+settings[toggle_name]                      = 0
+settings[toggle_slogan]                    = 0
+settings[toggle_node_user_picture]         = 0
+settings[toggle_comment_user_picture]      = 0
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon]                   = 0
+;settings[toggle_main_menu]                = 0
+;settings[toggle_secondary_menu]           = 0
+
+;-- Required Regions
+regions[page_top] = Page Top
+regions[content] = Content
+regions[page_bottom] = Page Bottom
+
+;-- Core Regions
+regions[header] = Header
+regions[footer] = Footer
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+regions[help] = Help
+regions[highlighted] = Highlighted
+
+;-- Custom Regions
+regions[after_footer] = After Footer
+
+;-- Assets
+stylesheets[all][] = css/drupal.css
+
+
