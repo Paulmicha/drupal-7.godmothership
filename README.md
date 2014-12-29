@@ -5,16 +5,16 @@ My own attempt to achieve a reusable Drupal 7 base theme, freely inspired by @mo
 
 **Modules to install :**
 - https://www.drupal.org/project/admin_menu
-- https://www.drupal.org/project/magic
+- https://www.drupal.org/project/adminimal_admin_menu
 - https://www.drupal.org/project/elements
 - https://www.drupal.org/project/html5_tools
 - https://www.drupal.org/project/fences
+- https://www.drupal.org/project/magic
 
 **Recommended modules :**
-- https://www.drupal.org/project/adminimal_admin_menu
 - https://www.drupal.org/project/admin_views
-- https://www.drupal.org/project/entity_view_mode
 - https://www.drupal.org/project/fast_404
+- https://www.drupal.org/project/entity_view_mode
 - https://www.drupal.org/project/hide_formats
 
 **Magic configuration** :
@@ -27,7 +27,8 @@ My own attempt to achieve a reusable Drupal 7 base theme, freely inspired by @mo
 ~contextual/*.css
 ~overlay/*.css
 ~toolbar/*.css
-~sites/all/modules/contrib/adminimal_admin_menu/adminimal_admin_menu.css
+~*adminimal_admin_menu.css
+~*hybridauth*
 ```
 
 **Fences configuration** :

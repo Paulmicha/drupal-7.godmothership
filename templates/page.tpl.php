@@ -84,7 +84,7 @@
         
         <div class="siteinfo">
             <?php if ($logo): ?>
-            <figure class="u-cell">
+            <figure>
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
                     <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
                 </a>
@@ -107,10 +107,15 @@
     <!-- main -->
     <div role="main" id="main-content">
         
-        <?php if ($page['highlighted'] OR $messages) { ?>
+        <?php if ($messages) { ?>
         <div class="drupal-messages">
-            <?php print render($page['highlighted']); ?>
             <?php print $messages; ?>
+        </div>
+        <?php } ?>
+        
+        <?php if ($page['highlighted']) { ?>
+        <div class="highlighted">
+            <?php print render($page['highlighted']); ?>
         </div>
         <?php } ?>
         
